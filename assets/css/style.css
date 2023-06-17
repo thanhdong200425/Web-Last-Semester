@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main .nav {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 0 15px;
+  border-radius: 5px;
+}
+
+.main .nav .nav__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85px;
+}
+
+.main .nav .nav__icon .icon {
+  width: 30px;
+}
+
+.main .nav .nav__functions,
+.main .nav .nav__my-music {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main .nav .nav__functions .nav__functions--element,
+.main .nav .nav__my-music .nav__my-music--title {
+  margin: 3px auto;
+  width: 75%;
+}
+
+.main .nav .nav__functions .nav__functions--element a,
+.main .nav .nav__my-music .nav__my-music--title {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 0.5;
+  display: block;
+  padding: 7px 7px 7px 20px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.main .nav .nav__functions .nav__functions--element a:hover {
+  background-color: #ff0066;
+  color: white;
+}
+
+.main .nav .nav__functions .nav__functions--element a.active {
+  background-color: #ff0066;
+  color: white;
+}
+
+.main .nav .nav__my-music .nav__my-music--title h2 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #a6a6a6;
+  letter-spacing: 1.2px;
+}
