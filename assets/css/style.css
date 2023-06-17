@@ -11,6 +11,7 @@
   flex-direction: column;
   margin: 15px 0 0 15px;
   border-radius: 5px;
+  position: fixed;
 }
 
 .main .nav .nav__icon {
@@ -32,13 +33,15 @@
 }
 
 .main .nav .nav__functions .nav__functions--element,
-.main .nav .nav__my-music .nav__my-music--title {
+.main .nav .nav__my-music .nav__my-music--title,
+.main .nav .nav__my-music .nav__my-music--elements {
   margin: 3px auto;
-  width: 75%;
+  width: 80%;
 }
 
 .main .nav .nav__functions .nav__functions--element a,
-.main .nav .nav__my-music .nav__my-music--title {
+.main .nav .nav__my-music .nav__my-music--title,
+.main .nav .nav__my-music .nav__my-music--elements a {
   text-decoration: none;
   font-size: 1.2rem;
   color: black;
@@ -50,7 +53,8 @@
   text-align: left;
 }
 
-.main .nav .nav__functions .nav__functions--element a:hover {
+.main .nav .nav__functions .nav__functions--element a:hover,
+.main .nav .nav__my-music .nav__my-music--elements a:hover {
   background-color: #ff0066;
   color: white;
 }
@@ -65,4 +69,12 @@
   font-size: 0.8rem;
   color: #a6a6a6;
   letter-spacing: 1.2px;
+}
+
+.main .nav .nav__my-music .nav__my-music--elements .element a {
+  text-decoration: none;
+}
+.main .nav .nav__my-music .nav__my-music--elements .element .icon {
+  padding-bottom: 4px;
+  margin-right: 9px;
 }
