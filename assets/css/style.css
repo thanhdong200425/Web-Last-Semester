@@ -5,13 +5,17 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .main .nav {
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
-  margin: 15px 0 0 15px;
   border-radius: 5px;
-  position: fixed;
+  margin-top: 17px;
 }
 
 .main .nav .nav__icon {
@@ -77,4 +81,10 @@
 .main .nav .nav__my-music .nav__my-music--elements .element .icon {
   padding-bottom: 4px;
   margin-right: 9px;
+}
+
+.main .main-content {
+  overflow: scroll;
+  background-color: #a6a6a6;
+  margin-top: 17px;
 }
