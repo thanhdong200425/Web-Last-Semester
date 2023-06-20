@@ -5,8 +5,8 @@ Các thành phần trên trang web cần làm
         - Phần thứ ba là khối my music => (Đã xong) 
         - Phần cuối cùng là playList => (Đã xong)
  2) Thanh content chính
-       - Phần navigation => (Đang làm)  
+       - Phần navigation => (Đã xong)  
        - Phần For you       
-         +) 1 
+         +) 1 (Xong)
          +) 2 
          +) 3 
