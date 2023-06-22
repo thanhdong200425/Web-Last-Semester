@@ -10,4 +10,7 @@ Các thành phần trên trang web cần làm
          +) 1 (Xong)
          +) 2 (Xong)
          +) 3 (Xong)
- 3) Thanh music player
+ 3) Thanh music player 
+       - Phần title (Đã xong)
+       - Phần buttons (Đã xong)
+       - Phần tools (Đã xong)
