@@ -8,5 +8,6 @@ Các thành phần trên trang web cần làm
        - Phần navigation => (Đã xong)  
        - Phần For you       
          +) 1 (Xong)
-         +) 2 
-         +) 3 
+         +) 2 (Xong)
+         +) 3 (Xong)
+ 3) Thanh music player
