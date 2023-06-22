@@ -12,8 +12,6 @@ body {
 
 .main .nav {
   background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
   border-radius: 5px;
   margin-top: 17px;
 }
@@ -39,7 +37,7 @@ body {
 .main .nav .nav__functions .nav__functions--element,
 .main .nav .nav__my-music .nav__my-music--title,
 .main .nav .nav__my-music .nav__my-music--elements {
-  margin: 3px auto;
+  margin: 8px auto;
   width: 80%;
 }
 
@@ -78,11 +76,13 @@ body {
 
 .main .nav .nav__my-music .nav__my-music--elements .element a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
 }
 
 .main .nav .nav__my-music .nav__my-music--elements .element .icon {
-  padding-bottom: 4px;
-  margin-right: 9px;
+  margin-right: 15px;
 }
 
 .main .main-content {
