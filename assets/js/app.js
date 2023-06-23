@@ -4,30 +4,32 @@ const $$ = document.querySelectorAll.bind(document);
 const firstAlbums = $('.main .main-content .main-content__albumn.first .row');
 const secondAlbumns = $('.main .main-content .main-content__albumn.second .row');
 const authors = $('.main .main-content .main-content__first-hint-line .trending-authors .row');
+const playlist = $('.main .main-content .main-content__albumn .row');
+const playerTitle = $('.main .music-player .player-title');
 
 const musicList = {
     firstLists: [
-    {
-        name: 'Chill',
-        author: "Thanh Dong",
-        image: './assets/img/Chill.png',
-    },
-    {
-        name: "Nhẹ nhàng cùng V-POP",
-        author: "Dong",
-        image: './assets/img/Nhe nhang.png',
-    },
-    {
-        name: '3107',
-        author: "Erik, Dương Nâu, ...",
-        image: './assets/img/3107.png'
-    }, 
-    {
-        name: 'Lofi chill',
-        author: "Nhiều tác giả",
-        image: './assets/img/Lofi Guitar.png'
-    }
-            ],
+        {
+            name: 'Chill',
+            author: "Thanh Dong",
+            image: './assets/img/Chill.png',
+        },
+        {
+            name: "Nhẹ nhàng cùng V-POP",
+            author: "Dong",
+            image: './assets/img/Nhe nhang.png',
+        },
+        {
+            name: '3107',
+            author: "Erik, Dương Nâu, ...",
+            image: './assets/img/3107.png'
+        },
+        {
+            name: 'Nghe là yêu',
+            author: "Nhiều tác giả",
+            image: './assets/img/nghelayeu.png'
+        }
+    ],
     secondList: [
         {
             name: 'About self-love',
@@ -43,7 +45,7 @@ const musicList = {
             name: 'Start to day',
             author: "Alexander",
             image: 'https://cdn.dribbble.com/users/809349/screenshots/13542531/media/e1cbf70c9e3d4219d105a1f7f9e095a8.png?compress=1&resize=800x600&vertical=center'
-        }, 
+        },
         {
             name: 'Friday feels',
             author: "John Smith",
@@ -74,8 +76,8 @@ const app = {
         }
     ],
 
-    renderAuthors: function()  {
-        const htmls = this.authors.map(function(author) {
+    renderAuthors: function () {
+        const htmls = this.authors.map(function (author) {
             return `
             <div class="author col l-3">
                         <a href="">
@@ -92,38 +94,78 @@ const app = {
 
         authors.innerHTML = htmls.join('');
     },
-    renderLists: function()  {
-        const first = musicList.firstLists.map(function(list) {
+    renderLists: function () {
+        const first = musicList.firstLists.map(function (list) {
             return `<div class="col l-3 list">
-                    <a href="" class="list-image">
+                    <button onclick="changePage()" class="list-image">
                       <img
                         src="${list.image}"
                         alt=""
+                        class="image"
                       />
-                    </a>
-                    <p class="list-title space">${list.name}</p>
+                    </button>
+                    <h4 class="list-title space">${list.name}</h4>
                     <p class="list-author space">by ${list.author}</p>
                   </div>`
         });
         firstAlbums.innerHTML = first.join('');
 
-        const second = musicList.secondList.map(function(list) {
+        const second = musicList.secondList.map(function (list) {
             return `<div class="col l-3 list">
-                    <a href="" class="list-image">
+                    <button  class="list-image">
                       <img
                         src="${list.image}"
                         alt=""
+                        class="image"
                       />
-                    </a>
-                    <p class="list-title space">${list.name}</p>
+                    </button>
+                    <h4 class="list-title space">${list.name}</h4>
                     <p class="list-author space">by ${list.author}</p>
                   </div>`
         });
         secondAlbumns.innerHTML = second.join('');
 
     },
-
     handleEvent: () => {
+
+        // Xử lý khi người dùng nhấn vào một bài nhạc nào đó
+        playlist.onclick = (e) => {
+            if(e.target.classList.contains('list-title') || e.target.classList.contains('list-author')) {
+                const div = e.target.parentNode;
+                const imgVal = div.querySelector('img').getAttribute('src');
+                const nameVal = div.querySelector('.main .main-content .main-content__albumn h4').innerText;
+                const authorVal = div.querySelector('.main .main-content .main-content__albumn p').innerText.replace("by", "");
+                playerTitle.innerHTML = `
+                <div class="img">
+                  <img src="${imgVal}" alt="" />
+                </div>
+                <div class="info">
+                  <p class="name">${nameVal}</p>
+                  <p class="author" style="font-size: 0.9em">
+                    ${authorVal}
+                  </p>
+                </div>
+                `;
+            } else if(e.target.classList.contains('image')){
+               const div = e.target.closest('div');
+                const imgVal = div.querySelector('img').getAttribute('src');
+                const nameVal = div.querySelector('.main .main-content .main-content__albumn h4').innerText;
+                const authorVal = div.querySelector('.main .main-content .main-content__albumn p').innerText.replace("by", "");
+                playerTitle.innerHTML = `
+                <div class="img">
+                  <img src="${imgVal}" alt="" />
+                </div>
+                <div class="info">
+                  <p class="name">${nameVal}</p>
+                  <p class="author" style="font-size: 0.9em">
+                    ${authorVal}
+                  </p>
+                </div>
+                `;
+            }
+        }
+
+
     },
     start: () => {
         app.handleEvent();

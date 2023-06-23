@@ -13,4 +13,13 @@ Các thành phần trên trang web cần làm
  3) Thanh music player 
        - Phần title (Đã xong)
        - Phần buttons (Đã xong)
-       - Phần tools (Đã xong)
+       - Phần tools (Đã xong) * {Nhưng chưa set thanh progress bar}
+ 4) Trang player cho từng albumn
+       - Phần navigation
+       - Phần music-player 
+       - Phần content
+
+----------------------------------------------------------------------------------
+Sự kiện trên trang web cần làm
+1) Nhấn vào bài hát bất kì thì nó sẽ hiện ra thông tin bài hát ở thanh "music-player" (Xong), nhưng chỉ mới ấn được dãy đầu tiên
+2) Set thanh progress bar
