@@ -133,3 +133,53 @@ const app = {
 };
 
 app.start();
+
+// ------------------------------------- Tìm kiếm = giọng lói  -------------------------------------------
+const searchInput = document.querySelector('#input-search');
+var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+const recognition = new SpeechRecognition();
+
+recognition.lang = 'vi-VI';
+recognition.continuous = false;
+
+let originalColor = null;
+const microphone = document.querySelector('.microphone');
+const handleVoice = (text) => {
+    console.log('text', text);
+    
+    const handleText = text.toLowerCase();
+    if (handleText.includes('bài hát')) {
+        const location = handleText.split('hát')[1].trim();
+
+        console.log('location', location);
+        searchInput.value = location;
+        const changeEvent = new Event('change');
+        searchInput.dispatchEvent(changeEvent); 
+    }
+}
+
+microphone.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (!originalColor) {
+        originalColor = microphone.style.color;
+    }
+
+    recognition.start();
+    microphone.style.color = 'red';
+});
+
+recognition.onspeechend = () => {
+    recognition.stop();
+    microphone.style.color = originalColor;
+}
+
+recognition.onerror = (err) => {
+    console.error(err);
+    microphone.style.color = originalColor;
+}
+
+recognition.onresult = (e) => {
+    console.log('onresult', e);
+    const text = e.results[0][0].transcript;
+    handleVoice(text);
+}

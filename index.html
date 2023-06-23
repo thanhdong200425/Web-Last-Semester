@@ -8,6 +8,12 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Music player</title>
+
+    <!-- link font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link css -->
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -180,9 +186,12 @@
                     </a>
                     <input
                       type="text"
-                      class="input-search"
+                      class="input-search" id="input-search"
                       placeholder="Search"
                     />
+                    <span class="microphone">
+                      <i class="fa-solid fa-microphone"></i>
+                    </span>
                   </div>
                   <div class="profile col l-3">
                     <!--Name-->

@@ -129,6 +129,16 @@ body {
   outline: 0;
 }
 
+.microphone{
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 7px 13px;
+}
+
+.microphone:hover{
+  background-color: #a6a6a6;
+}
+
 .main .main-content .main-content__nav .profile {
   display: flex;
   align-items: center;
