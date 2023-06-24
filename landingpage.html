@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- custom link css -->
+    <link rel="stylesheet" href="./assets/css/landingpage.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#">
+                <img src="./assets/img/Apple-Logo-768x432.png" class="logo">
+            </a>
+            <div class="toggle" onclick="toggleMenu(1);"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Question</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2> It's not just Song <br> It's
+                    <span>
+                        Music    
+                        <!--  O day ghi ten thuong hieu 
+                            Vi du nhu Spotify, Zing MP3, Soundcloud..... -->
+                    </span>
+                </h2>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Soluta dicta ullam qui iste consequuntur voluptate
+                    numquam esse aliquam commodi, totam et ipsum distinctio
+                    tenetur perferendis debitis voluptatem quasi explicabo adipisci.
+                </p>
+                <a href="#"> Sign In </a>
+            </div>
+
+            <div class="imgBox">
+                <img src="./assets/img/MTP1.png" class="starbucks">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li>
+                <img 
+                src="./assets/img/MTP1.png" 
+                onclick="imgSlider('./assets/img/MTP1.png')"
+                width="100px" 
+                >
+            </li>
+            <li>
+                <img
+                src="./assets/img/PhuongLy1.png" 
+                onclick="imgSlider('./assets/img/PhuongLy1.png')" 
+                width="80px" 
+                >
+            </li>
+            <li>
+                <img
+                src="./assets/img/Binz2.png" 
+                onclick="imgSlider('./assets/img/Binz2.png')"
+                onclick="changeCircleColor('#d752b1')"
+                width="90px" 
+                >
+            </li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="#"><img src="./assets/img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./assets/img/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="./assets/img/twitter.png" alt=""></a></li>
+        </ul>
+
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
