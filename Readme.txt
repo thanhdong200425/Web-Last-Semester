@@ -15,9 +15,13 @@ Các thành phần trên trang web cần làm
        - Phần buttons (Đã xong)
        - Phần tools (Đã xong) * {Nhưng chưa set thanh progress bar}
  4) Trang player cho từng albumn
-       - Phần navigation
-       - Phần music-player 
-       - Phần content
+       - Phần navigation (Xong)
+       - Phần music-player (Xong)
+       - Phần content 
+         +) Info (Xong)
+         +) List (Xong) 
+ 5) Set thuộc tính cho từng albumn
+      
 
 ----------------------------------------------------------------------------------
 Sự kiện trên trang web cần làm

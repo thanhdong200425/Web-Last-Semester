@@ -1,8 +1,8 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-const firstAlbums = $('.main .main-content .main-content__albumn.first .row');
-const secondAlbumns = $('.main .main-content .main-content__albumn.second .row');
+const firstAlbumn = $('.main .main-content .main-content__albumn.first .row');
+const secondAlbumn = $('.main .main-content .main-content__albumn.second .row');
 const authors = $('.main .main-content .main-content__first-hint-line .trending-authors .row');
 const playlist = $('.main .main-content .main-content__albumn .row');
 const playerTitle = $('.main .music-player .player-title');
@@ -108,7 +108,7 @@ const app = {
                     <p class="list-author space">by ${list.author}</p>
                   </div>`
         });
-        firstAlbums.innerHTML = first.join('');
+        firstAlbumn.innerHTML = first.join('');
 
         const second = musicList.secondList.map(function (list) {
             return `<div class="col l-3 list">
@@ -123,7 +123,7 @@ const app = {
                     <p class="list-author space">by ${list.author}</p>
                   </div>`
         });
-        secondAlbumns.innerHTML = second.join('');
+        secondAlbumn.innerHTML = second.join('');
 
     },
     handleEvent: () => {
