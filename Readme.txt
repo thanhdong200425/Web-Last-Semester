@@ -14,4 +14,3 @@ Các thành phần trên trang web cần làm
        - Phần title (Đã xong)
        - Phần buttons (Đã xong)
        - Phần tools (Đã xong)
- 
