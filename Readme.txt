@@ -4,8 +4,12 @@ Các thành phần trên trang web cần làm
         - Phần thứ hai là các chức năng => (Đã xong)
         - Phần thứ ba là khối my music => (Đã xong) 
         - Phần cuối cùng là playList => (Đã xong)
+        - Responsive (Chưa)
  2) Thanh content chính
-       - Phần navigation => (Đã xong)  
+       - Phần navigation => (Đã xong)
+       - Voice search 
+           +) Voice -> Text (Xong)
+           +) Search (Chưa)
        - Phần For you       
          +) 1 (Xong)
          +) 2 (Xong)
@@ -14,3 +18,7 @@ Các thành phần trên trang web cần làm
        - Phần title (Đã xong)
        - Phần buttons (Đã xong)
        - Phần tools (Đã xong)
+ 4) Landing Page 
+       - Layout (Xong)
+       - Responsive (Xong)
+       - Login Register (Chưa)
