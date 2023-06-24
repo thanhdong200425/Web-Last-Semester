@@ -8,8 +8,27 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Music player</title>
+
+    <!-- link font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- custom link css -->
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
   </head>
   <body>
     <div class="main">
@@ -19,8 +38,8 @@
           <div class="nav col l-2 m-4">
             <!--Web logo-->
             <div class="nav__icon">
-              <div class="icon">
-                <a href="" style="display: block">
+              <div class="icon" data-aos="zoom-in-right" data-aos-delay="150">
+                <a href="#" style="display: block">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                     <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path
@@ -34,23 +53,31 @@
             <!--Functions-->
             <div class="nav__functions">
               <div class="nav__functions--element">
-                <a href="">Library</a>
+                <a href="" data-aos="zoom-in-right" data-aos-delay="150"
+                  >Library</a
+                >
               </div>
               <div class="nav__functions--element">
-                <a href="">Browse</a>
+                <a href="" data-aos="zoom-in-right" data-aos-delay="300"
+                  >Browse</a
+                >
               </div>
               <div class="nav__functions--element">
-                <a href="">Radio</a>
+                <a href="" data-aos="zoom-in-right" data-aos-delay="450"
+                  >Radio</a
+                >
               </div>
               <div class="nav__functions--element">
-                <a href="">Store</a>
+                <a href="" data-aos="zoom-in-right" data-aos-delay="600"
+                  >Store</a
+                >
               </div>
             </div>
 
             <!--My Music-->
             <div class="nav__my-music">
               <div class="nav__my-music--title">
-                <h2>my music</h2>
+                <h2 data-aos="zoom-in-right" data-aos-delay="750">my music</h2>
               </div>
 
               <div class="nav__my-music--elements">
@@ -61,13 +88,15 @@
                       height="1em"
                       viewBox="0 0 512 512"
                       class="icon"
+                      data-aos="zoom-in-right"
+                      data-aos-delay="900"
                     >
                       <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                       <path
                         d="M256 80C149.9 80 62.4 159.4 49.6 262c9.4-3.8 19.6-6 30.4-6c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48c-44.2 0-80-35.8-80-80V384 336 288C0 146.6 114.6 32 256 32s256 114.6 256 256v48 48 16c0 44.2-35.8 80-80 80c-26.5 0-48-21.5-48-48V304c0-26.5 21.5-48 48-48c10.8 0 21 2.1 30.4 6C449.6 159.4 362.1 80 256 80z"
                       />
                     </svg>
-                    Songs
+                    <p data-aos="zoom-in-right" data-aos-delay="900">Songs</p>
                   </a>
                 </div>
 
@@ -78,13 +107,15 @@
                       height="1em"
                       viewBox="0 0 512 512"
                       class="icon"
+                      data-aos="zoom-in-right"
+                      data-aos-delay="1050"
                     >
                       <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                       <path
                         d="M463.5 224H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1c-87.5 87.5-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5z"
                       />
                     </svg>
-                    Recent
+                    <p data-aos="zoom-in-right" data-aos-delay="1050">Recent</p>
                   </a>
                 </div>
 
@@ -95,13 +126,15 @@
                       height="1em"
                       viewBox="0 0 448 512"
                       class="icon"
+                      data-aos="zoom-in-right"
+                      data-aos-delay="1200"
                     >
                       <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                       <path
                         d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z"
                       />
                     </svg>
-                    Local
+                    <p data-aos="zoom-in-right" data-aos-delay="1200">Local</p>
                   </a>
                 </div>
 
@@ -112,13 +145,15 @@
                       height="1em"
                       viewBox="0 0 512 512"
                       class="icon"
+                      data-aos="zoom-in-right"
+                      data-aos-delay="1350"
                     >
                       <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                       <path
                         d="M499.1 6.3c8.1 6 12.9 15.6 12.9 25.7v72V368c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V147L192 223.8V432c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V200 128c0-14.1 9.3-26.6 22.8-30.7l320-96c9.7-2.9 20.2-1.1 28.3 5z"
                       />
                     </svg>
-                    Lists
+                    <p data-aos="zoom-in-right" data-aos-delay="1350">Listen</p>
                   </a>
                 </div>
               </div>
@@ -139,6 +174,8 @@
                           xmlns="http://www.w3.org/2000/svg"
                           height="1em"
                           viewBox="0 0 384 512"
+                          data-aos="zoom-in-left"
+                          data-aos-delay="150"
                         >
                           <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                           <path
@@ -155,6 +192,8 @@
                           xmlns="http://www.w3.org/2000/svg"
                           height="1em"
                           viewBox="0 0 384 512"
+                          data-aos="zoom-in-left"
+                          data-aos-delay="300"
                         >
                           <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                           <path
@@ -171,6 +210,8 @@
                         height="1em"
                         viewBox="0 0 512 512"
                         class="icon"
+                        data-aos="zoom-in-left"
+                        data-aos-delay="450"
                       >
                         <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                         <path
@@ -181,8 +222,18 @@
                     <input
                       type="text"
                       class="input-search"
+                      id="input-search"
                       placeholder="Search"
+                      data-aos="zoom-in-left"
+                      data-aos-delay="600"
                     />
+                    <span class="microphone">
+                      <i
+                        class="fa-solid fa-microphone"
+                        data-aos="zoom-in-left"
+                        data-aos-delay="900"
+                      ></i>
+                    </span>
                   </div>
                   <div class="profile col l-3">
                     <!--Name-->
@@ -217,7 +268,13 @@
 
               <!--First albumn-->
               <div class="main-content__albumn first col l-12 m-12">
-                <h4 class="name-of-title">For you</h4>
+                <h4
+                  class="name-of-title"
+                  data-aos="fade-down"
+                  data-aos-delay="200"
+                >
+                  For you
+                </h4>
                 <!--Lists music-->
                 <div class="row"></div>
               </div>
@@ -227,7 +284,13 @@
                 <div class="row">
                   <!--Continue listen part-->
                   <div class="continue-listen col l-6 m-6">
-                    <h4 class="name-of-title offset">Continue listening</h4>
+                    <h4
+                      class="name-of-title offset"
+                      data-aos="fade-left"
+                      data-aos-delay="150"
+                    >
+                      Continue listening
+                    </h4>
                     <div class="row">
                       <div class="image col l-4">
                         <img
@@ -282,7 +345,13 @@
 
                   <!--Trending authors-->
                   <div class="trending-authors col l-6 m-6">
-                    <h4 class="name-of-title offset">Trending authors</h4>
+                    <h4
+                      class="name-of-title offset"
+                      data-aos="fade-left"
+                      data-aos-delay="150"
+                    >
+                      Trending authors
+                    </h4>
                     <div class="row"></div>
                   </div>
                 </div>
@@ -426,10 +495,12 @@
       </div>
     </div>
     <script src="assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-      const changePage = () => {
-        window.location.href = "./page-player.html";
-      };
+      AOS.init({
+        duration: 800,
+        offset: 150,
+      });
     </script>
   </body>
 </html>
