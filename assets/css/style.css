@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
 }
 
 body {
@@ -18,13 +18,11 @@ body {
 
 .main .nav .nav__icon {
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 85px;
 }
 
 .main .nav .nav__icon .icon {
-  width: 30px;
+  width: 100%;
 }
 
 .main .nav .nav__functions,
@@ -37,7 +35,7 @@ body {
 .main .nav .nav__functions .nav__functions--element,
 .main .nav .nav__my-music .nav__my-music--title,
 .main .nav .nav__my-music .nav__my-music--elements {
-  margin: 8px auto;
+  margin: 12px auto;
   width: 80%;
 }
 
@@ -78,7 +76,7 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .main .nav .nav__my-music .nav__my-music--elements .element .icon {
@@ -130,13 +128,13 @@ body {
   outline: 0;
 }
 
-.microphone{
+.microphone {
   cursor: pointer;
   border-radius: 50%;
   padding: 7px 13px;
 }
 
-.microphone:hover{
+.microphone:hover {
   background-color: #a6a6a6;
 }
 
@@ -199,10 +197,12 @@ body {
   font-weight: 700;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.95em;
 }
 
 .main .main-content .main-content__albumn .list .list-author {
   color: #a6a6a6;
+  font-size: 0.85em;
 }
 
 .main .main-content .main-content__albumn .list .space {
