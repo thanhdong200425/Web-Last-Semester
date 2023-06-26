@@ -1,8 +1,8 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-const firstAlbums = $('.main .main-content .main-content__albumn.first .row');
-const secondAlbumns = $('.main .main-content .main-content__albumn.second .row');
+const firstAlbumn = $('.main .main-content .main-content__albumn.first .row');
+const secondAlbumn = $('.main .main-content .main-content__albumn.second .row');
 const authors = $('.main .main-content .main-content__first-hint-line .trending-authors .row');
 const playlist = $('.main .main-content .main-content__albumn .row');
 const playerTitle = $('.main .music-player .player-title');
@@ -13,6 +13,38 @@ const musicList = {
             name: 'Chill',
             author: "Thanh Dong",
             image: './assets/img/Chill.png',
+            songs: [
+              {
+                index: 0,
+                name: '3107',
+                path: './assets/song/3107.mp3',
+                image: './assets/img/3107.png',
+              }, 
+              {
+                index: 1,
+                name: 'Anh yêu em nhiều lắm',
+                path: './assets/song/anh-yeu-em-nhieu-lam.mp3',
+                image: './assets/img/ChillAlbumn/anh-yeu-em-nhieu-lam.png'
+              },
+              {
+                index: 2,
+                name: 'Đưa em về nhà',
+                path: './assets/song/dua-em-ve-nha.mp3',
+                image: './assets/img/ChillAlbumn/dua-em-ve-nha.png'
+              }, 
+              {
+                index: 3,
+                name: 'Vài câu nói có khiến người thay đổi',
+                path: './assets/song/vai-cau-noi-co-khien-nguoi-thay-doi.mp3',
+                image: './assets/img/ChillAlbumn/vai-cau-noi-co-khien-nguoi-thay-doi.png'
+              },
+              {
+                index: 4,
+                name: '3107-4',
+                path: './assets/song/3107-4.mp3',
+                image: './assets/img/ChillAlbumn/3107-4.png'
+              }
+            ],
         },
         {
             name: "Nhẹ nhàng cùng V-POP",
@@ -79,7 +111,7 @@ const app = {
     renderAuthors: function () {
         const htmls = this.authors.map(function (author) {
             return `
-            <div class="author col l-3">
+            <div class="author col l-3 c-6">
                         <a href="">
                           <div class="image offset">
                             <img
@@ -96,7 +128,7 @@ const app = {
     },
     renderLists: function () {
         const first = musicList.firstLists.map(function (list) {
-            return `<div class="col l-3 list">
+            return `<div class="col l-3 c-12 m-6 list">
                     <button onclick="changePage()" class="list-image">
                       <img
                         src="${list.image}"
@@ -108,10 +140,10 @@ const app = {
                     <p class="list-author space">by ${list.author}</p>
                   </div>`
         });
-        firstAlbums.innerHTML = first.join('');
+        firstAlbumn.innerHTML = first.join('');
 
         const second = musicList.secondList.map(function (list) {
-            return `<div class="col l-3 list">
+            return `<div class="col l-3 c-12 m-6 list">
                     <button  class="list-image">
                       <img
                         src="${list.image}"
@@ -123,7 +155,7 @@ const app = {
                     <p class="list-author space">by ${list.author}</p>
                   </div>`
         });
-        secondAlbumns.innerHTML = second.join('');
+        secondAlbumn.innerHTML = second.join('');
 
     },
     handleEvent: () => {
@@ -131,6 +163,7 @@ const app = {
         // Xử lý khi người dùng nhấn vào một bài nhạc nào đó
         playlist.onclick = (e) => {
             if(e.target.classList.contains('list-title') || e.target.classList.contains('list-author')) {
+                console.log(e.target);
                 const div = e.target.parentNode;
                 const imgVal = div.querySelector('img').getAttribute('src');
                 const nameVal = div.querySelector('.main .main-content .main-content__albumn h4').innerText;
