@@ -11,7 +11,7 @@
       <div class="grid wide">
         <div class="row">
           <!--Thanh navigation-->
-          <div class="nav col l-2 m-4">
+          <div class="nav col l-2 m-4 c-12">
             <!--Web logo-->
             <div class="nav__icon">
               <div class="icon">
@@ -216,44 +216,44 @@
                 <div class="main-content__albumn--info col l-6">
                   <div class="row">
                     <!--Image-->
-                    <div class="image col l-12">
-                      <div class="container">
-                        <img
-                          src="./assets/img/Player Page/Page-play-music.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
+                    <!--                    <div class="image col l-12">-->
+                    <!--                      <div class="container">-->
+                    <!--                        <img-->
+                    <!--                          src="./assets/img/Player Page/Page-play-music.png"-->
+                    <!--                          alt=""-->
+                    <!--                        />-->
+                    <!--                      </div>-->
+                    <!--                    </div>-->
 
                     <!--Title-->
-                    <div class="title col l-12">
-                      <!--Name and author-->
-                      <div class="names">
-                        <h2 class="name-of-albumn">Life kit: Selfcare</h2>
-                        <p class="name-of-author" style="color: #a6a6a6">
-                          by Helen Mile
-                          <span class="quantity-of-albumn" style="color: #000"
-                            >7 eposides</span
-                          >
-                        </p>
-                      </div>
+                    <!--                    <div class="title col l-12">-->
+                    <!--                      &lt;!&ndash;Name and author&ndash;&gt;-->
+                    <!--                      <div class="names">-->
+                    <!--                        <h2 class="name-of-albumn">Life kit: Selfcare</h2>-->
+                    <!--                        <p class="name-of-author" style="color: #a6a6a6">-->
+                    <!--                          by Helen Mile-->
+                    <!--                          <span class="quantity-of-albumn" style="color: #000"-->
+                    <!--                            >7 eposides</span-->
+                    <!--                          >-->
+                    <!--                        </p>-->
+                    <!--                      </div>-->
 
-                      <!--Button-->
-                      <div class="buttons">
-                        <button class="btn-follow">Follow</button>
-                        <button class="btn-share">Share</button>
-                      </div>
-                    </div>
+                    <!--                      &lt;!&ndash;Button&ndash;&gt;-->
+                    <!--                      <div class="buttons">-->
+                    <!--                        <button class="btn-follow">Follow</button>-->
+                    <!--                        <button class="btn-share">Share</button>-->
+                    <!--                      </div>-->
+                    <!--                    </div>-->
 
                     <!--Description-->
-                    <div class="description col l-12">
-                      <h3>About</h3>
-                      <p class="desc">
-                        Welcom to the Life kit: Selfcare podcast. Each episode,
-                        we will talk about self-love, mindset, self-development
-                        and all things mental health. Discussing everything...
-                      </p>
-                    </div>
+                    <!--                    <div class="description col l-12">-->
+                    <!--                      <h3>About</h3>-->
+                    <!--                      <p class="desc">-->
+                    <!--                        Welcom to the Life kit: Selfcare podcast. Each episode,-->
+                    <!--                        we will talk about self-love, mindset, self-development-->
+                    <!--                        and all things mental health. Discussing everything...-->
+                    <!--                      </p>-->
+                    <!--                    </div>-->
                   </div>
                 </div>
 
@@ -307,11 +307,23 @@
                                 xmlns="http://www.w3.org/2000/svg"
                                 height="1em"
                                 viewBox="0 0 384 512"
+                                class="not-actives"
                               >
                                 <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                 <path
                                   d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
                                 ></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="actives"
+                                height="1em"
+                                viewBox="0 0 320 512"
+                              >
+                                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                  d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"
+                                />
                               </svg>
                             </button>
                           </div>
@@ -517,7 +529,7 @@
 
               <div class="player-buttons col l-4">
                 <!--Random button-->
-                <button type="button">
+                <button type="button" class="btn-random">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="1em"
@@ -531,7 +543,7 @@
                 </button>
 
                 <!--Back button-->
-                <button type="button">
+                <button type="button" class="btn-back">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="1em"
@@ -545,22 +557,37 @@
                 </button>
 
                 <!--Play button-->
-                <button class="btn-play" type="button">
+                <button class="btn-play" type="button" style="border: 0">
                   <svg
                     style="fill: white"
                     xmlns="http://www.w3.org/2000/svg"
                     height="1em"
                     viewBox="0 0 384 512"
+                    class="play"
                   >
                     <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path
                       d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
                     />
                   </svg>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 320 512"
+                    style="fill: white"
+                    class="pause"
+                    display="none"
+                  >
+                    <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"
+                    />
+                  </svg>
                 </button>
 
                 <!--Forward button-->
-                <button type="button">
+                <button type="button" class="btn-forward">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="1em"
@@ -574,7 +601,7 @@
                 </button>
 
                 <!--Repeat button-->
-                <button type="button">
+                <button type="button" class="btn-repeat active">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="1em"
@@ -586,6 +613,8 @@
                     />
                   </svg>
                 </button>
+
+                <audio id="audio" src=""></audio>
               </div>
 
               <div class="player-tools col l-4">
@@ -629,4 +658,5 @@
       </div>
     </div>
   </body>
+  <script src="./assets/js/player.js"></script>
 </html>

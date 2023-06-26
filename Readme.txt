@@ -20,7 +20,14 @@ Các thành phần trên trang web cần làm
        - Phần content 
          +) Info (Xong)
          +) List (Xong) 
- 5) Set thuộc tính cho từng albumn
+ 5) Set thuộc tính cho từng albumn (Xong) (Chưa merge cho branch test : Chưa làm) 
+ 6) Khi nhấn vào bài hát nào thì JavaScript sẽ tự động render ra albumn đó
+       - Chọn albumn muốn nghe
+       - Dựa vào thông tin đã click, so sánh với từng mảng trong dữ liệu
+            +) Nếu khớp thì lấy giá trị đó và render ra
+            +) Nếu không khớp thì không làm gì cả
+ 7) Chưa responsive
+
       
 
 ----------------------------------------------------------------------------------
