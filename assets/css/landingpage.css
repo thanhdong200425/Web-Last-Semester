@@ -51,6 +51,11 @@ header ul li a{
     text-decoration: none;
 }
 
+header ul li a:hover {
+    color: #8371fd;
+    font-size: larger;
+}
+
 .content{
     position: relative;
     width: 100%;
