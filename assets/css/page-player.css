@@ -407,3 +407,71 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
+
+/*Tablet*/
+@media (min-width: 740px) and (max-width: 1023px) {
+  body {
+    max-width: 100%;
+    overflow-y: scroll;
+  }
+
+  .main .main-content .main-content__nav .search {
+    display: none;
+  }
+
+  .main .main-content .main-content__albumn .list button {
+    width: 100%;
+  }
+  .main .music-player {
+    display: none;
+  }
+
+  .main
+    .main-content
+    .main-content__first-hint-line
+    .continue-listen
+    .status
+    .btn-play,
+  .main
+    .main-content
+    .main-content__first-hint-line
+    .continue-listen
+    .status
+    a
+    svg {
+    display: none;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 739px) {
+  body {
+    overflow-y: scroll;
+    max-width: 100%;
+    max-height: 100vh;
+  }
+
+  .main .main-content .main-content__nav .search {
+    display: none;
+  }
+
+  .main .main-content .main-content__albumn .list button {
+    width: 100%;
+  }
+
+  .main .main-content .main-content__albumn .list {
+    margin: 25px 0;
+  }
+
+  .main .main-content .main-content__first-hint-line .continue-listen {
+    margin-bottom: 20px;
+  }
+
+  .main .music-player {
+    display: none;
+  }
+
+  /* .main .nav .nav__my-music .nav__my-music--elements .element .icon {
+    display: none;
+  } */
+}

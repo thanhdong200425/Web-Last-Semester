@@ -124,7 +124,7 @@ const player = {
     renderInfo: () => {
         const list = musicAlbumn.firstAlbumn.map(function (albumn) {
             return `
-            <div class="image col l-12">
+            <div class="image col l-12 c-12 m-12">
                       <div class="container">
                         <img
                           src="${albumn.image}"
@@ -133,7 +133,7 @@ const player = {
                       </div>
                     </div>
              
-             <div class="title col l-12">
+             <div class="title col l-12 c-12 m-12">
                       <!--Name and author-->
                       <div class="names">
                         <h2 class="name-of-albumn">${albumn.name}</h2>
@@ -152,7 +152,7 @@ const player = {
                       </div>
                     </div>  
                     
-                     <div class="description col l-12">
+                     <div class="description col l-12 c-12 m-12" style="margin-bottom: 20px">
                       <h3>About</h3>
                       <p class="desc">
                        ${albumn.description}
@@ -168,10 +168,10 @@ const player = {
         const songs = musicAlbumn.firstAlbumn.map(function (list) {
             return list.songs.map(function (song) {
                 return `
-        <div class="element col l-12">
+        <div class="element col l-12 c-12">
         <div class="row">
           <!--Image-->
-          <div class="image col l-4" style="padding: 0">
+          <div class="image col l-4 c-4 m-4" style="padding: 0">
             <img
               src="${song.image}"
               alt=""
@@ -179,7 +179,7 @@ const player = {
           </div>
 
           <!--Description-->
-          <div class="description col l-8">
+          <div class="description col l-8 c-8 m-8">
             <div class="info">
               <div class="name">
                 <h4>${song.name}</h4>
