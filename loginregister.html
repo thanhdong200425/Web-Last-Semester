@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in & Sign up Form</title>
+
+    <!--  link css -->
+    <link rel="stylesheet" href="./assets/css/loginregister.css" />
+
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form action="index.html" autocomplete="off" class="sign-in-form">
+              <div class="logo">
+                <img src="./assets/img/JoySongpng.png" />
+              </div>
+
+              <div class="heading">
+                <h2>Xin chào !</h2>
+                <h6>Bạn mới tham gia JoySong?</h6>
+                <a href="#" class="toggle">Đăng ký ngay</a>
+                <br><br>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Tài khoản</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Mật khẩu</label>
+                </div>
+
+                <input type="submit" value="Đăng nhập" class="sign-btn" />
+
+                <p class="text">
+                  Bạn đã quên mật khẩu ? 
+                  <a href="#">Trợ giúp</a> 
+                </p>
+              </div>
+            </form>
+
+            <form action="index.html" autocomplete="off" class="sign-up-form">
+              <div class="logo">
+                <img src="./assets/img/JoySongpng.png" />
+              </div>
+
+              <div class="heading">
+                <h2>Sự bắt đầu mới</h2>
+                <h6>Bạn đã có tài khoản?</h6>
+                <a href="#" class="toggle">Đăng nhập ngay</a>
+                <br><br>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Tài khoản</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Email</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Mật khẩu</label>
+                </div>
+
+                <input type="submit" value="Đăng ký" class="sign-btn" />
+
+                <p class="text">
+                  Bằng cách đăng ký, tôi đồng ý với
+                  <a href="#">Điều khoản dịch vụ </a> và
+                  <a href="#">Chính sách bảo mật</a>
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="./assets/img/image1.png" class="image img-1 show" alt="" />
+              <img src="./assets/img/image2.png" class="image img-2" alt="" />
+              <img src="./assets/img/image3.png" class="image img-3" alt="" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>Nghe nhạc mọi lúc mọi nơi</h2>
+                  <h2>Tạo danh sách phát của riêng bạn</h2>
+                  <h2>Nghe nhạc không sợ quảng cáo</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Javascript file -->
+
+    <script src="./assets/js/loginregister.js"></script>
+  </body>
+</html>

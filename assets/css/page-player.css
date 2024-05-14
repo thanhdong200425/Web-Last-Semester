@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -18,11 +18,13 @@ body {
 
 .main .nav .nav__icon {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 85px;
 }
 
 .main .nav .nav__icon .icon {
-  width: 100%;
+  width: 30px;
 }
 
 .main .nav .nav__functions,
@@ -35,7 +37,7 @@ body {
 .main .nav .nav__functions .nav__functions--element,
 .main .nav .nav__my-music .nav__my-music--title,
 .main .nav .nav__my-music .nav__my-music--elements {
-  margin: 12px auto;
+  margin: 8px auto;
   width: 80%;
 }
 
@@ -116,9 +118,8 @@ body {
 
 .main .main-content .main-content__nav .search .icon {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 9px;
   fill: #999999;
-  padding: 0 7px;
 }
 
 .main .main-content .main-content__nav .search .input-search {
@@ -126,16 +127,6 @@ body {
   height: 100%;
   border: 0;
   outline: 0;
-}
-
-.microphone {
-  cursor: pointer;
-  border-radius: 50%;
-  padding: 7px 13px;
-}
-
-.microphone:hover {
-  background-color: #a6a6a6;
 }
 
 .main .main-content .main-content__nav .profile {
@@ -165,146 +156,129 @@ body {
 }
 
 .main .main-content .main-content__albumn {
-  margin: 25px 0;
-}
-
-.main .main-content .main-content__albumn .name-of-title {
-  font-weight: 700;
-  font-size: 1.5em;
-  margin-bottom: 20px;
-}
-
-.main .main-content .main-content__albumn .list:hover,
-.main .main-content .main-content__albumn .list button:hover {
-  cursor: pointer;
-}
-
-.main .main-content .main-content__albumn .list .list-image {
-  display: block;
-}
-
-.main .main-content .main-content__albumn .list button {
-  border: 0;
-}
-
-.main .main-content .main-content__albumn .list .image {
-  width: 100%;
+  margin-top: 35px;
   height: 100%;
-  border-radius: 15px;
 }
 
-.main .main-content .main-content__albumn .list .list-title {
-  font-weight: 700;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 0.95em;
-}
-
-.main .main-content .main-content__albumn .list .list-author {
-  color: #a6a6a6;
-  font-size: 0.85em;
-}
-
-.main .main-content .main-content__albumn .list .space {
-  padding-left: 5px;
-}
-
-.main .main-content .main-content__first-hint-line {
-  margin: 25px 0;
-}
-
-.main .main-content .main-content__first-hint-line .name-of-title {
-  font-weight: 700;
-  font-size: 1.2em;
-}
-
-.main .main-content .main-content__first-hint-line .continue-listen img,
 .main
   .main-content
-  .main-content__first-hint-line
-  .trending-authors
-  .author
+  .main-content__albumn
+  .main-content__albumn--info
+  .image
   img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  border-radius: 10px;
+  object-fit: contain;
+  max-height: 420px;
 }
 
-.main .main-content .main-content__first-hint-line .continue-listen .image {
-  padding-inline: 0;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  overflow: hidden;
-}
-
-.main .main-content .main-content__first-hint-line .continue-listen .status {
-  background-color: #fff;
-  padding-inline: 0;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
-  overflow: hidden;
-}
-
-.main
-  .main-content
-  .main-content__first-hint-line
-  .continue-listen
-  .status
-  .info {
-  padding: 15px;
-}
-
-.main .main-content .main-content__first-hint-line .continue-listen .author {
-  color: #b3b3cc;
-  font-size: smaller;
-}
-
-.main
-  .main-content
-  .main-content__first-hint-line
-  .continue-listen
-  .status
-  .btn-play {
-  width: 35px;
-  height: 35px;
-  background-color: #ff751a;
-  border-radius: 50%;
-  border: 0;
-  cursor: pointer;
-  position: absolute;
-  right: 14px;
-  top: 30px;
+.main .main-content .main-content__albumn .main-content__albumn--info .title {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin: 1em 0;
 }
 
-.main .main-content .main-content__first-hint-line .trending-authors .author a {
+.main
+  .main-content
+  .main-content__albumn
+  .main-content__albumn--info
+  .title
+  .buttons
+  .btn-follow {
+  width: 75px;
+  height: 35px;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #ff751a;
+  border: 0;
+}
+
+.main
+  .main-content
+  .main-content__albumn
+  .main-content__albumn--info
+  .title
+  .buttons
+  .btn-share {
+  width: 75px;
+  height: 35px;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #000000;
+  background-color: #eceaea;
+  border: 0;
+  font-weight: 700;
+}
+
+.main .main-content .main-content__albumn .main-content__albumn--list .element {
+  padding: 5px 20px;
+}
+
+.main
+  .main-content
+  .main-content__albumn
+  .main-content__albumn--list
+  .element
+  .image
+  img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.main
+  .main-content
+  .main-content__albumn
+  .main-content__albumn--list
+  .element
+  .description {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.main
+  .main-content
+  .main-content__albumn
+  .main-content__albumn--list
+  .element
+  .description
+  .info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
 }
 
 .main
   .main-content
-  .main-content__first-hint-line
-  .trending-authors
-  .author
-  .image {
-  width: 110px;
-  height: 110px;
+  .main-content__albumn
+  .main-content__albumn--list
+  .description
+  .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.main
+  .main-content
+  .main-content__albumn
+  .main-content__albumn--list
+  .description
+  .buttons
+  .btn-play {
+  background-color: #ff751a;
   border-radius: 50%;
-  overflow: hidden;
-}
-
-/*Used to create space between two elements*/
-.offset {
-  margin-bottom: 15px;
-}
-
-.main .main-content .main-content__first-hint-line .trending-authors .author a {
-  text-decoration: none;
-  color: #999999;
+  width: 30px;
+  height: 30px;
+  border: 0;
 }
 
 .main .music-player {
@@ -405,8 +379,18 @@ body {
   }
 }
 
+/*-------------------------------------------------------------------------------*/
+.main .music-player .player-buttons .btn-repeat .active,
+.main .music-player .player-buttons .btn-random .active {
+  fill: red;
+}
+
+.main .main-content__albumn .main-content__albumn--list .element .active {
+  background-color: chocolate;
+}
+
 /*CSS Scrollbar*/
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 7px;
 }
 
@@ -422,7 +406,7 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
-} */
+}
 
 /*Tablet*/
 @media (min-width: 740px) and (max-width: 1023px) {
